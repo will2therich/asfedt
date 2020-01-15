@@ -29,5 +29,7 @@ Once built there will be a dist directory that can be used to deploy a static we
 npm run lint
 ```
 
+## For Google API
+In order to use the google api you will need to generate a API key to access the Google javascript map api which can be done [here](https://developers.google.com/maps/documentation/javascript/get-api-key)
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
