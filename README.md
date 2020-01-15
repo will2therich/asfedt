@@ -30,6 +30,6 @@ npm run lint
 ```
 
 ## For Google API
-In order to use the google api you will need to generate a API key to access the Google javascript map api which can be done [here](https://developers.google.com/maps/documentation/javascript/get-api-key)
+In order to use the google api you will need to generate a API key to access the Google javascript map api which can be done [here](https://developers.google.com/maps/documentation/javascript/get-api-key) this can then be put in the .env file.
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
