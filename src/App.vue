@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="v-app">
+    <q-layout view="lHh Lpr lFf">
+      <top-nav-bar></top-nav-bar>
+      <intro-section></intro-section>
+      <officer-section></officer-section>
+      <priorities-section></priorities-section>
+      <Footer></Footer>
+    </q-layout>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TopNavBar from "./components/structual/TopNavBar";
+import IntroSection from "./components/sections/IntroSection";
+import OfficerSection from "./components/sections/OfficerSection";
+import PrioritiesSection from "./components/sections/PrioritiesSection";
+import Footer from "./components/structual/Footer";
 
 export default {
-  name: "app",
+  name: "LayoutDefault",
   components: {
-    HelloWorld
+    TopNavBar,
+    IntroSection,
+    OfficerSection,
+    PrioritiesSection,
+    Footer
+  },
+  data() {
+    return {
+      leftDrawerOpen: false
+    };
   }
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
